@@ -1,0 +1,36 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en">
+<head th:fragment="head-fragment">
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="../static/css/site.css"
+	th:href="@{/css/site.css}" />
+<title layout:title-pattern="$LAYOUT_TITLE | $CONTENT_TITLE">Spring
+	Security Sample Training</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" th:href="@{/index}">Spring Security
+				Learning</a>
+		</nav>
+	</header>
+
+	<main role="main">
+		<div layout:fragment="content"></div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-center text-muted">&copy; Spring Security Sample
+				Basic Authentication &#10084;</p>
+		</div>
+	</footer>
+</body>
+</html>

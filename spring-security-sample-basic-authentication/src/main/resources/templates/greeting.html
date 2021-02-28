@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout}" lang="en">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="jumbotron main-content">
+			<h1>Successfully Authenticated !</h1>
+		</div>
+		<div class="container col text-center">
+			<p th:text="'Hello, ' + ${name} + '!'" />
+			<p></p>
+			<a href="/logout" th:href="@{/logout}" class="btn btn-lg btn-success">Logout</a>
+		</div>
+	</div>
+</body>
+</html>
