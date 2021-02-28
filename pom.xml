@@ -12,6 +12,6 @@
 		<java.version>11</java.version>
 	</properties>
 		<modules>
-		<module>employee-application-sample</module>
+		<module>spring-security-sample-basic-authentication</module>
   </modules>
 </project>
